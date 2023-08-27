@@ -1,0 +1,89 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #0074D9;
+    color: white;
+}
+
+.website-name {
+    font-size: 32px;
+    margin: 0;
+}
+.website-name a{
+    text-decoration: none;
+    color: white;
+}
+
+.description {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.navbar {
+    background-color: #333;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar li {
+    margin: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.quotes-box,
+.new-arrivals-box {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.quote,
+.new-arrival {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-style: italic;
+    color: #555;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}

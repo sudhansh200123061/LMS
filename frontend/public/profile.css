@@ -1,0 +1,138 @@
+/* profile.css */
+/* Reset some default margin/padding */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+
+  .footer {
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: center;
+    flex-shrink: 0;
+  }
+  
+  /* Additional styles for buttons, etc. */
+  
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  /* Styling for the user details container */
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling for the user name */
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  /* Styling for the user email */
+  p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  /* Styling for the issued books section */
+  h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  /* Styling for individual issued books */
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  /* style of navbar */
+  .navbar li a {
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+  }
+  
+  li {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling for book ID */
+  li strong {
+    display: block;
+    font-weight: bold;
+  }
+  
+  /* Styling for returned status */
+  li span {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #e0e0e0;
+    color: #333;
+    font-size: 14px;
+  }
+  
+  /* Styling for edit button */
+  #editNameButton {
+    display: block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #editNameButton:hover {
+    background-color: #0056b3;
+  }
+  

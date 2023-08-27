@@ -1,0 +1,37 @@
+<!-- views/edit_about.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admin-dashboard.css">
+    <title>Admin Dashboard - Library Management System</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="website-name"><a href="/">Admin Dashboard: LMS</a></h1>
+        <p class="description">Welcome, Admin! Manage the library efficiently.</p>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="/manage_catalog">Manage Catalog</a></li>
+            <li><a href="#">Manage Subjects</a></li>
+            <li><a href="#">User Management</a></li>
+            <li><a href="/adm_signup">Add new admin</a></li>
+            <li><a href="/aboutEdit">About Us (edit)</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <form action="/aboutEdit/" method="POST">
+            <textarea name="content" rows="10"><%= aboutContent ? aboutContent.content : '' %></textarea>
+            <button type="submit">Update Content</button>
+          </form>        
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2023 Library Management System. Developed by Anurag Yadav</p>
+    </footer>
+</body>
+</html>

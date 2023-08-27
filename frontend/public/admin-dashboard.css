@@ -1,0 +1,101 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #0074D9;
+    color: white;
+}
+
+.website-name {
+    font-size: 32px;
+    margin: 0;
+}
+
+.description {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.navbar {
+    background-color: #333;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar li {
+    margin: 0;
+}
+
+.website-name a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.statistics-box,
+.activity-log-box {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.box-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.statistic {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.activity-list {
+    list-style: disc;
+    margin-left: 20px;
+    color: #555;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+

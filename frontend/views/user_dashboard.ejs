@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="admin-dashboard.css">
+    <title>User Profile - Library Management System</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="website-name">User Profile</h1>
+        <p class="description">See your details here.</p>
+    </header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/catalog">See Catalog</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/logout">Logout</a></li>
+        </ul>
+    </nav>
+
+    <main class="main">
+        <div class="container">
+            <h1>User Dashboard</h1>
+            <div id="userDetails"></div>
+            <button id="editNameButton">Edit Name</button>
+          </div>
+    </main>
+    <div id="user-data" data-user-email="<%= userEmail %>"></div>
+
+    <footer class="footer">
+        <p>&copy; 2023 Library Management System. Developed by Anurag Yadav</p>
+    </footer>
+
+    <script src="profile.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/catalog.css">
+    <link rel="stylesheet" href="/admin-dashboard.css">
+    <link rel="stylesheet" href="/borrow.css">
+    <title>Borrow - Library Management System</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="website-name">Borrow</h1>
+        <p class="description">Borrow book: <%= uniqueCode %>.</p>
+    </header>
+
+    <main class="main">
+          <div class="otp">
+            <div id="user-data" data-user-email="<%= userEmail %>" book-id=" <%= uniqueCode %>"></div>
+            <button class="otp-button" id="otp-button">Generate OTP</button>
+            <!-- OTP verification box and button -->
+          </div>
+
+          <div class="otp-box" id="otp-box">
+            <input type="text" class="otp-input" maxlength="1" oninput="focusNextInput(this)">
+            <input type="text" class="otp-input" maxlength="1" oninput="focusNextInput(this)">
+            <input type="text" class="otp-input" maxlength="1" oninput="focusNextInput(this)">
+            <input type="text" class="otp-input" maxlength="1" oninput="focusNextInput(this)">
+            <input type="text" class="otp-input" maxlength="1" oninput="focusNextInput(this)">
+          </div>
+            <button id="verify-otp-button">Verify</button>
+            <button id="borrow-button">Borrow</button>
+    </main>
+        
+    <footer class="footer">
+        <p>&copy; 2023 Library Management System. Developed by Anurag Yadav</p>
+    </footer>
+    <script src="/borrow.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="auth.css">
+    <title>Admin Login: LMS</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h1 class="website-name">Admin</h1>
+        </div>
+        <div class="right">
+            <form class="login-form" action="/auth/adm_login" method="post">
+                <input type="email" id="email" name="email" required placeholder="Administrator id">
+                <input type="password" id="password" name="password" required placeholder="Admin-Password"><br>
+                <button type="submit">Login</button>
+            </form>
+            <p style="text-align: center;">Contact an administrator to get a new admin account</p>
+
+        </div>
+    </div>
+</body>
+</html>

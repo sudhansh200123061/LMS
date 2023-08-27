@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admin-dashboard.css">
+    <title>Admin Dashboard - Library Management System</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="website-name"><a href="/">Admin Dashboard</a></h1>
+        <p class="description">Welcome, Admin! Manage the library efficiently.</p>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="/manage_catalog">Manage Catalog</a></li>
+            <li><a href="#">User Management</a></li>
+            <li><a href="/adm_signup">Add new admin</a></li>
+            <li><a href="/aboutEdit">About Us (edit)</a></li>
+            <li><a href="/adm_logout">Admin Logout</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <div class="statistics-box">
+            <h2 class="box-title">Library Statistics</h2>
+            <h1>Book Inventory</h1>
+            <p>Total Number of Books: <span id="totalBooks">Loading...</span></p>
+            <p>Total Number of Available Books: <span id="availableBooks">Loading...</span></p>
+            <p>Total Number of Unavailable Books: <span id="unavailableBooks">Loading...</span></p>
+        </div>
+        <div class="activity-log-box">
+            <h2 class="box-title">Recent Activities</h2>
+            <ul class="activity-list">
+                <li>User "JohnDoe" checked out "The Alchemist".</li>
+                <li>Added new book: "Educated" by Tara Westover.</li>
+                <!-- Add more recent activities here -->
+            </ul>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2023 Library Management System. Developed by Anurag Yadav</p>
+    </footer>
+    <script src="admin-dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="auth.css">
+    <title>Library Management System</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h1 class="website-name">Library Management System</h1>
+        </div>
+        <div class="right">
+            <form class="login-form" action="/auth/login" method="post">
+                <input type="email" id="email" name="email" required placeholder="Username">
+                <input type="password" id="password" name="password" required placeholder="Password"><br>
+                <button type="submit">Login</button>
+            </form>
+            <p class="create-account-text">Don't have an account?</p>
+            <button class="create-account-btn" onclick="window.location.href='/signup'">Create New Account</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="catalog.css">
+    <link rel="stylesheet" href="admin-dashboard.css">
+    <title>Catalog - Library Management System</title>
+</head>
+<body>
+    
+    <header class="header">
+        <h1 class="website-name"><a href="/">Library Books Catalog</a></h1>
+        <p class="description">See all the books available here.</p>
+    </header>
+
+    <main class="main">
+        <section class="book-list-section">
+            <h2 class="section-title" style="text-align: center;">Available Books</h2>
+            <table id="book-table">
+                <thead>
+                    <tr>
+                        <th>Book ID</th>
+                        <th>Title</th>
+                        <th>Authors</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="book-list"></tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2023 Library Management System. Developed by Anurag Yadav</p>
+    </footer>
+
+    <script src="catalog.js"></script>
+</body>
+</html>

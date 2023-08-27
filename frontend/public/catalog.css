@@ -1,0 +1,147 @@
+/* Include your previous CSS styles here */
+
+/* Additional styles for catalog management */
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    height: 100vh;
+}
+
+.section-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333333;
+}  
+
+/* content of add-book-form should be evenly spread */
+.add-book-section
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+/* style for button */
+.add-book-section button {
+    width: 80px;
+    height: auto;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #244118;
+    color: white;
+    cursor: pointer;
+}
+/* style form in add-book-form */
+.add-book-section {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+button[type="submit"] {
+    padding: 8px 20px;
+    width: 200px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+#add-book-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.add-book-section,
+.book-list-section {
+    width: 80%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow-x: auto;
+}
+.book-list-section {
+    
+    height: 50vh;
+}
+
+#book-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#book-table th,
+#book-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+#book-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+
+.add-book-section label,
+.book-list-section label {
+    font-weight: bold;
+}
+
+#book-list {
+    list-style: none;
+    padding: 0;
+}
+
+#book-list li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+
+#book-list li span {
+    font-weight: bold;
+}
+.footer {
+    padding: 10px;
+    text-align: center;
+    background-color: #f2f2f2;
+    position: sticky;
+    bottom: 0;
+}
+

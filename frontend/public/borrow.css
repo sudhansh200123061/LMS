@@ -1,0 +1,51 @@
+
+/* Styling for the OTP container */
+
+.otp-box {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .otp-input {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+.otp {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for the OTP button */
+  .otp-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+   
+  /* Styling for the Verify and Borrow buttons */
+  #verify-otp-button,
+  #borrow-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #verify-otp-button {
+    margin: 40px;
+  }
